@@ -1,0 +1,180 @@
+:root {
+  /* IRIS: CTAs Focused Active states Links */
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+
+  /* NAVY BLUE: Overlays Shadows Headings */
+  --dark-color: #2e2f42;
+
+  /* GREEN: Valid fields Success messages */
+  --sucsses-color: #31d0aa;
+
+  /* SLATE: */
+  --primary-text-color: #434455;
+
+  /* LIGHT SLATE: Helper text Deemphasized text */
+  --subtle-text-color: #8e8f99;
+
+  /* CORNFLOWER: Accent color Hairlines Subtle backgrounds */
+  --accent-color: #e7e9fc;
+
+  /* CLOUD: Light mode backgrounds Light mode Dialogs/alerts  */
+  --light-color: #f4f4fd;
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
+/* Common Rules */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.accent {
+  color: var(--primary-brand-color);
+}
+
+.light {
+  color: var(--light-color);
+}
+
+.btn {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
+  background-color: var(--accent-color);
+}
+
+.btn.active,
+.btn:hover,
+.btn:focus {
+  color: var(--white-color);
+  background-color: var(--pressed-state-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+.site-nav .link {
+  font-weight: 500;
+  /* font-size: 16px; */
+  line-height: 1.5;
+  /* letter-spacing: 0.02em; */
+  color: var(--dark-color);
+}
+
+.site-nav .active {
+  color: var(--primary-brand-color);
+}
+
+.contacts-nav .link {
+  /* font-size: 16px; */
+  line-height: 1.5;
+  /* letter-spacing: 0.02em; */
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--primary-brand-color);
+}
+
+/* HERO section */
+.hero {
+  background-color: var(--dark-color);
+}
+.hero .title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.btn-hero {
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+}
+
+/* SECTION */
+.section .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section .subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.section .text {
+  line-height: 1.5;
+}
+
+/* TEAM section */
+.team {
+  background-color: var(--light-color);
+}
+
+/* FOOTER */
+
+.footer-wrap {
+  background-color: var(--dark-color);
+  color: var(--accent-color);
+}
+
+.footer-wrap .logo {
+  color: var(--light-color);
+}
+
+.footer-wrap .text {
+  line-height: 1.5;
+}
